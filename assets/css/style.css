@@ -411,6 +411,10 @@ main section > div:last-child button:hover {
   margin: 5px 8px 0 0;
 }
 
+/*----------*/
+/*FOOTER*/
+/*----------*/
+
 footer div {
   display: flex;
   justify-content: center;
