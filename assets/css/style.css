@@ -1,0 +1,433 @@
+/*----------*/
+/*GLOBAL*/
+/*----------*/
+body {
+  font-family: "Trip Sans Reg";
+  background-color: white;
+  font-size: 16px;
+}
+
+main {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.container {
+  width: 1136px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 54px;
+  font-family: "Trip Sans Med";
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h1 span:first-child {
+  color: #ff5d5d;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+h3 {
+  line-height: 40px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/*----------*/
+/*HEADER*/
+/*----------*/
+
+header {
+  height: 60px;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  margin-bottom: 40px;
+  position: fixed;
+}
+
+header .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 188px;
+}
+
+header .container nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 600;
+}
+
+header .container nav div {
+  background-color: #f2f2f200;
+  padding: 6px;
+  border-radius: 20px;
+  height: 25px;
+  margin-right: 15px;
+}
+
+header > .container nav :hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+header .container nav i {
+  margin-right: 5px;
+}
+
+header .container nav button {
+  font-family: inherit;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  font-size: 16px;
+  height: 40px;
+  width: 150px;
+  font-weight: bold;
+  border: none;
+}
+
+header .container nav button:hover {
+  background-color: black;
+}
+
+/*----------*/
+/*MAIN*/
+/*----------*/
+
+.options {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.options div {
+  flex: 1;
+  font-weight: bold;
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 10px 16px 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.options div:not(:last-child) {
+  margin-right: 10px;
+}
+
+.options div:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.options div:last-child i {
+  font-size: 6px;
+  margin-right: 2px;
+}
+
+.images {
+  display: flex;
+  height: 430px;
+}
+
+.images img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.images img:hover {
+  opacity: 0.75;
+}
+
+.images div:first-child {
+  flex: 1;
+  height: 100%;
+  margin-right: 2px;
+}
+
+.images div:first-child img {
+  width: 100%;
+  height: 100%;
+}
+
+.images div:last-child {
+  width: 480px;
+  height: 100%;
+  font-size: 0;
+}
+
+.images div:last-child img {
+  width: 100%;
+  height: 49.75%;
+}
+
+.images div:last-child img:first-child {
+  margin-bottom: 2px;
+}
+
+.localisation {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+.localisation ul {
+  display: flex;
+}
+
+.localisation ul li {
+  margin-right: 5px;
+}
+
+.localisation ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+main section {
+  display: flex;
+  justify-content: space-between;
+}
+
+main section > div:first-child {
+  width: 568px;
+  height: 237px;
+}
+
+main section > div:first-child p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: #333333;
+  height: 560px;
+  line-height: 25px;
+}
+
+main section > div:last-child {
+  background-color: #ff5d5d;
+  width: 401px;
+  height: 234px;
+  padding: 32px 32px 8px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+main section > div:last-child p {
+  margin-bottom: 24px;
+  line-height: 20px;
+}
+
+main section > div:last-child button {
+  padding: 10px 16px;
+  line-height: 20px;
+  background-color: black;
+  color: white;
+  width: 156px;
+  height: 54px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  font-family: "Trip Sans";
+}
+
+main section > div:last-child button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.imgPlan {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 80px;
+}
+
+.imgPlan img {
+  width: 465px;
+  height: 252px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.tourism {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.tourism > div:first-child p:first-child {
+  width: 288px;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.tourism > div:first-child p:last-child {
+  font-family: Georgia;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.carousel {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll hidden;
+}
+
+.carousel > div {
+  width: 272px;
+  height: 100%;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.carousel > div:not(:last-child) {
+  margin-right: 16px;
+}
+
+.carousel img {
+  width: 100%;
+  height: 204px;
+  object-fit: cover;
+}
+
+.carousel img:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.circle {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.circle:hover {
+  background-color: #e4dede;
+}
+
+.circle i {
+  margin: 12px;
+}
+
+.carousel div p:nth-child(3) {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.carousel div p:nth-child(3):hover {
+  color: #545454;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.carousel div p:nth-child(4) {
+  color: #008000;
+  margin: 4px 0 8px;
+}
+
+.carousel div p:last-child {
+  font-size: 14px;
+}
+
+.carousel2 {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll hidden;
+}
+
+.carousel2 > div {
+  width: 368px;
+  height: 100%;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.carousel2 > div:not(:last-child) {
+  margin-right: 16px;
+}
+
+.carousel2 img {
+  width: 100%;
+  height: 276px;
+  object-fit: cover;
+}
+
+.carousel2 img:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.carousel2 > div > p:nth-child(2) {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.carousel2 > div > p:nth-child(2):hover {
+  color: #545454;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.carousel2 div p:nth-child(3),
+.carousel2 div p:last-child {
+  font-size: 14px;
+}
+
+.carousel2 span {
+  font-weight: bold;
+}
+
+.carousel2 div div {
+  display: flex;
+  align-items: center;
+}
+
+.carousel2 div div img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin: 5px 8px 0 0;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 156px;
+  background-color: #faf1ed;
+  font-size: 20px;
+}
+footer span {
+  font-weight: bold;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+footer img {
+  margin-right: 15px;
+}
