@@ -13,10 +13,8 @@
       href="./assets/img/smallLogo.svg"
       type="image/x-icon"
     />
-    <script
-      src="https://kit.fontawesome.com/5c5b732576.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./assets/js/main2.js"></script>
+    <!-- <script src="./assets/js/main.js"></script> -->
     <title>Tourisme à Paris 2021 : Visiter Paris - Tripadvisor</title>
   </head>
   <body>
@@ -24,7 +22,7 @@
       <div class="container">
         <div><i class="icon-menu_bars"></i></div>
         <img src="./assets/img/bigLogo.svg" alt="logo Tripadvisor" />
-        <div><i class="icon-search"></i><input type="text" /></div>
+        <div><i class="icon-search"></i><input type="search" /></div>
         <div><i class="icon-search"></i></div>
         <nav>
           <div>
@@ -36,7 +34,7 @@
           <div>
             <p><i class="icon-notification_bell"></i><span> Alertes</span></p>
           </div>
-          <button>Contactez-moi</button>
+          <button id="modal-btn">Contactez-nous</button>
         </nav>
       </div>
     </header>
@@ -307,5 +305,25 @@
         </p>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <form id="contact-form">
+          <h1>Formulaire de contact</h1>
+          <input type="text" placeholder="Prénom" id="firstname" />
+          <input type="text" placeholder="Nom" id="lastname" />
+          <input type="email" placeholder="Email" id="email" />
+          <input type="text" placeholder="Sujet" id="subject" />
+          <textarea
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Votre message ici..."
+          ></textarea>
+          <button type="submit">Envoyer le formulaire</button>
+          <p id="response"></p>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
