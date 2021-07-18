@@ -136,7 +136,8 @@ header .container nav button {
 }
 
 header .container nav button:hover {
-  background-color: black;
+  background-color: #111111;
+  opacity: none;
 }
 
 /*----------*/
@@ -191,10 +192,34 @@ header .container nav button:hover {
   opacity: 0.75;
 }
 
-.images div:first-child {
+.images > div:first-child {
   flex: 2;
   height: 100%;
   margin-right: 2px;
+  position: relative;
+}
+
+.images > div:first-child button {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-family: inherit;
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  line-height: 120%;
+  padding: 8px 5px;
+  background-color: #000000;
+  color: white;
+}
+
+.images > div:first-child button:hover {
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.images > div:first-child button i {
+  font-size: 18px;
 }
 
 .images div:first-child img {
@@ -316,7 +341,7 @@ main section > div:last-child > div:last-child img {
 }
 
 .tourism > div:first-child {
-  width: 23%;
+  width: 25%;
   margin-right: 20px;
 }
 
@@ -520,6 +545,7 @@ footer img {
   background-color: #e5e5e5;
   padding: 20px;
   margin: 0 auto;
+  border-radius: 10px;
   width: 40%;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -529,7 +555,7 @@ footer img {
 .close-btn {
   float: right;
   color: darkgray;
-  font-size: 50px;
+  font-size: 2vw;
   font-weight: bold;
 }
 .close-btn:hover {
@@ -547,32 +573,32 @@ footer img {
 }
 
 #contact-form h1 {
-  font-size: 40px;
+  font-size: 3vw;
   font-weight: bold;
-  margin-bottom: 60px;
+  margin-bottom: 7.5%;
 }
 
 #contact-form input {
   width: calc(100% - 20px);
-  height: 30px;
-  padding: 10px;
-  margin-bottom: 30px;
+  height: 3%;
+  padding: 1%;
+  margin-bottom: 5%;
   border: solid 2px darkgray;
   border-radius: 10px;
   outline: 0;
-  font-size: 20px;
+  font-size: 1.5vw;
 }
 
 #contact-form textarea {
   width: calc(100% - 20px);
-  height: 250px;
-  padding: 10px;
-  margin-bottom: 30px;
+  height: 200px;
+  padding: 1%;
+  margin-bottom: 5%;
   resize: none;
   border: solid 2px darkgray;
   border-radius: 10px;
   outline: 0;
-  font-size: 20px;
+  font-size: 1.5vw;
 }
 
 #contact-form button {
@@ -580,9 +606,9 @@ footer img {
   background-color: #04aa6d;
   color: white;
   width: 100%;
-  height: 50px;
-  margin-bottom: 30px;
-  font-size: 30px;
+  height: 3%;
+  margin-bottom: 5%;
+  font-size: 2vw;
   border: solid 2px darkgray;
   border-radius: 10px;
   outline: 0;
